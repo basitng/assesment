@@ -1,0 +1,88 @@
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color-scheme: light;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  font-family: "roboto";
+  background-color: #fafafa;
+}
+a {
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  border: 1px solid #cccccc80;
+  width: 43%;
+  min-height: 70vh;
+  padding-top: 40px;
+  border-radius: 5px;
+}
+
+.inner__card {
+  border-top: 1px solid #cccccc80;
+  padding: 10px;
+}
+.card__title {
+  font-size: 25px;
+  outline: none;
+}
+.toolbar {
+  box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px,
+    rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
+  background: #fafafa !important;
+  width: 93%;
+  border-radius: 40px;
+  position: relative;
+}
+.toolbar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.075) 0px 2px 1px -1px,
+    rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgba(0, 0, 0, 0.032) 0px 1px 3px 0px;
+}
+.editor {
+  margin-top: 20px;
+  min-height: 10vh;
+  border: none;
+  background-image: red !important;
+}
+.image__block {
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  border-radius: 5px;
+}
+.fancyScroll::-webkit-scrollbar {
+  width: 10px;
+}
+.fancyScroll::-webkit-scrollbar-track {
+  background-color: #cccccc80;
+  border-radius: 100px;
+}
+.fancyScroll::-webkit-scrollbar-thumb {
+  border-radius: 40px;
+  background-color: #cccccc;
+}
